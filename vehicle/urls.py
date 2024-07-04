@@ -18,5 +18,5 @@ urlpatterns = [
                   path("moto/delete/<int:pk>", MotoDestroyAPIView.as_view(), name="moto-delete"),
 
                   # milage
-                  path("milage/", MilageCreateAPIView.as_view(), name="milage-create"),
+                  path("milage/create/", MilageCreateAPIView.as_view(), name="milage-create"),
               ] + router.urls
