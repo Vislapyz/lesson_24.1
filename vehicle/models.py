@@ -26,7 +26,7 @@ class Moto(models.Model):
 
 
 class Milage(models.Model):
-    car = models.ForeignKey(Car, on_delete=models.CASCADE, null=True, blank=True, )
+    car = models.ForeignKey(Car, on_delete=models.CASCADE, null=True, blank=True, related_name="milage")
     moto = models.ForeignKey(Moto, on_delete=models.CASCADE, null=True, blank=True, related_name="milage")
     milage = models.PositiveIntegerField(verbose_name="Пробег")
     year = models.PositiveSmallIntegerField(verbose_name="Год регистрации")
