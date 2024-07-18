@@ -35,8 +35,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
     "rest_framework",
     "rest_framework_simplejwt",
+    "drf_yasg",
+    "corsheaders",
     "django_filters",
     "users",
     "vehicle"
@@ -136,3 +139,15 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "https://read-only.example.com",
+    "https://read-and-write.example.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://read-and-write.example.com",
+]
+
+KUR_API_URL = "http://api.currencyapi.com/"
+KUR_API_KEY = "cur_live_x2MkhjJx00Fq7ag7Wy9klid7dCkW3QTZkiZgfBcW"
