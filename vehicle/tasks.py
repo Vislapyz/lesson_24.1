@@ -20,3 +20,15 @@ def check_milage(pk, model):
                 if prev_milage < n.milage:
                     print("Неверный пробег")
                     break
+
+
+def check_filter():
+    filter_price = {"price_lte": 500}
+    if Car.objects.filter(**filter_price).exisist():
+        print("Отчет по фильтру")
+        # send_mail(
+        #     subject="Отчет по фильтру",
+        #     message="У нас есть машины под ваш фильтр, заходите на сайт",
+        #     from_email="admin@admin.com",
+        #     recipient_list=[user.email],
+        # )

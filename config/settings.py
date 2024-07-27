@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "django_filters",
     "users",
-    "vehicle"
+    "vehicle",
+    "django_celery_beat"
 
 ]
 
