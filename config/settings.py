@@ -151,3 +151,6 @@ CSRF_TRUSTED_ORIGINS = [
 
 KUR_API_URL = "http://api.currencyapi.com/"
 KUR_API_KEY = "cur_live_x2MkhjJx00Fq7ag7Wy9klid7dCkW3QTZkiZgfBcW"
+
+CELERY_BROKER_URL = "redis://127.0.0.1:6379"
+CELERY_RESULT_BACKEND = "redis://127.0.0.1:6379"
